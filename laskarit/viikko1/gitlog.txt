@@ -1,0 +1,105 @@
+commit 6742a3e6073bf8c24c9b57f9d63e32857c5ec9a5
+Author: Joel Wang <workworkjoel@gmail.com>
+Date:   Tue Mar 19 21:35:22 2019 +0200
+
+    file juttuja
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 57923811aad3a467882e7c180fda317ec1e3ad39
+Author: Joel Wang <workworkjoel@gmail.com>
+Date:   Tue Mar 19 21:15:53 2019 +0200
+
+    new files
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 0046bb093391301228a9912d1ae9f9d2d64bf641
+Author: Joel Wang <workworkjoel@gmail.com>
+Date:   Tue Mar 19 21:07:40 2019 +0200
+
+    lisää muutoksia
+
+ eka.txt    | 2 +-
+ kolmas.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit a4610f3fa4811a08cb6b0adcfd5e4be966971152
+Author: Joel Wang <workworkjoel@gmail.com>
+Date:   Tue Mar 19 21:05:01 2019 +0200
+
+    nimetty
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 6c187ac545de4e843f5c08d82dc1dc058aaebcf3
+Author: Joel Wang <workworkjoel@gmail.com>
+Date:   Tue Mar 19 21:03:35 2019 +0200
+
+    poistetaan
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit ee4253dd0e21d6ed8e08ea2a323a389423070b5a
+Author: Joel Wang <workworkjoel@gmail.com>
+Date:   Tue Mar 19 21:01:56 2019 +0200
+
+    muutoksia tiedostoon
+
+ tiedosto.txt | 39 +++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 39 insertions(+)
+
+commit d66c13253376c7a4163c9037ab76c67ffe854ec6
+Author: Joel Wang <workworkjoel@gmail.com>
+Date:   Tue Mar 19 20:42:00 2019 +0200
+
+    stuff lisätty
+
+ stuff/peruna.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 21ad6043c34d4d47201e804ebbc6ec389e0c534d
+Author: Joel Wang <workworkjoel@gmail.com>
+Date:   Tue Mar 19 20:40:51 2019 +0200
+
+    muutoksia
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit c9b964af4d8340cc59263a7e26cba30cb78b0f67
+Author: Joel Wang <workworkjoel@gmail.com>
+Date:   Tue Mar 19 20:38:29 2019 +0200
+
+    lisättiin kolmas
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 5c698489514e7f935ee6c3cc5f635be050464eeb
+Author: Joel Wang <workworkjoel@gmail.com>
+Date:   Tue Mar 19 20:35:09 2019 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 196fb3e812804ffc261cbf4fff941164fd59c437
+Author: Joel Wang <workworkjoel@gmail.com>
+Date:   Tue Mar 19 20:26:49 2019 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
