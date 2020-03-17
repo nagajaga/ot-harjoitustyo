@@ -1,3 +1,4 @@
+wjoel@melkki:~$ tree kurssit
 kurssit
 └── ot2019
     └── viikko1
@@ -5,14 +6,13 @@ kurssit
             ├── pom.xml
             └── src
                 ├── main
-                │   ├── java
-                │   │   └── com
-                │   │       └── mycompany
-                │   │           └── unicafe
-                │   │               ├── Kassapaate.java
-                │   │               ├── Maksukortti.java
-                │   │               └── Paaohjelma.java
-                │   └── resources
+                │   └── java
+                │       └── com
+                │           └── mycompany
+                │               └── unicafe
+                │                   ├── Kassapaate.java
+                │                   ├── Maksukortti.java
+                │                   └── Paaohjelma.java
                 └── test
                     └── java
                         └── com
@@ -20,4 +20,5 @@ kurssit
                                 └── unicafe
                                     └── MaksukorttiTest.java
 
-15 directories, 5 files
+14 directories, 5 files
+
