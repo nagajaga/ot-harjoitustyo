@@ -21,7 +21,7 @@ public class MaksukorttiTest {
 
     @Before
     public void setUp() {
-        kortti = new Maksukortti(10);
+        kortti = new Maksukortti(100);
     }
 
     @Test
@@ -77,7 +77,6 @@ public class MaksukorttiTest {
     }
 
     @Test
-
     public void syoEdullisestiToimiiTasarahalla() {
         kortti.syoEdullisesti();
         kortti.syoEdullisesti();
@@ -85,7 +84,8 @@ public class MaksukorttiTest {
         kortti.syoEdullisesti();
         assertEquals("Kortilla on rahaa 0.0 euroa", kortti.toString());
     }
-
+    
+    @Test
     public void syoMaukkaastiToimiiTasarahalla() {
         kortti.syoEdullisesti();
         kortti.syoEdullisesti();
