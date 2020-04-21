@@ -6,4 +6,5 @@
 
 <suppressions>
     <suppress files="ingredientconverter.io.InputHandler.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="ingredientconverter.ui.ConverterUI.java" checks="[a-zA-Z0-9]*"/>
 </suppressions>

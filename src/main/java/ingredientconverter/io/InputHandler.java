@@ -26,8 +26,8 @@ public class InputHandler {
             System.out.println("Choose the unit of measurement you wish to convert TO");
             listUnits();
             String toUnit = reader.nextLine();
-            Converter converter = new Converter(ingredientName,fromUnit,amount,toUnit);
-            converter.convert();
+            Converter converter = new Converter();
+            converter.convert(ingredientName,fromUnit,amount,toUnit);
             Double rounded = converter.conversion();            
             System.out.println(amount + " " + fromUnit + " of " +  ingredientName + " is equal to " + rounded + " " + toUnit + ".");
         }

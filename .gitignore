@@ -2,4 +2,6 @@
 /laskarit/viikko2/Unicafe/target
 /target/
 /nbproject/
-/.settings/
+.settings/
+.classpath
+.project
