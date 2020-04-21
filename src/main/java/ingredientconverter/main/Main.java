@@ -7,6 +7,6 @@ public class Main {
         //Scanner reader = new Scanner(System.in);
         //InputHandler inputHandler = new InputHandler(reader);
         //inputHandler.run();
-        ConverterUI.main(args);
+        ConverterUI.main(args); // comment this line and remove previous comments for text ui.
     }
 }

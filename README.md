@@ -36,7 +36,13 @@ mvn package
 
 generoi hakemistoon _target_ suoritettavan jar-tiedoston _ingredientConverter-1.0-SNAPSHOT.jar_
 
+### Ohjelman suorittaminen komentoriviltä
 
+Komento
+
+```
+mvn compile exec:java -Dexec.mainClass=ingredientconverter.main.Main
+```
 ### Checkstyle
 
 Tiedostoon [checkstyle.xml](https://github.com/nagajaga/ot-harjoitustyo/blob/master/checkstyle.xml) määrittelemät tarkistukset suoritetaan komennolla
