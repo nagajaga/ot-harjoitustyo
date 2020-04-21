@@ -1,10 +1,10 @@
 # Arkkitehtuuri
 
 Ohjelman pakkausrakenne:
-(link)
+<img src="https://github.com/nagajaga/ot-harjoitustyo/blob/master/dokumentointi/packages.png">
 
 Ohjelman luokkakaavio:
-(link)
+<img src="https://github.com/nagajaga/ot-harjoitustyo/blob/master/dokumentointi/classes.png">
 
 Ohjelman sekvenssikaavio:
-(link)
+<img src="https://github.com/nagajaga/ot-harjoitustyo/blob/master/dokumentointi/sequence.png">
