@@ -1,7 +1,13 @@
 # työaikakirjanpito
 
-## Viikko 1 ja 2: 2h
+## Viikko 2 ja 3: 2h
 Konfigurointi
 
-## Viikko 3: 7h
+## Viikko 4: 7h
 Käyttöliittymä, rakenne, toimiva sovellus, 100% rivikattavuus sovelluslogiikalle, checkstyle
+
+## Viikko 5: 12h
+Graafinen käyttöliittymä, lisää testejä, javaFX ja muu maven konfigurointi, kaaviot.
+
+
+Yhteensä: 21h
