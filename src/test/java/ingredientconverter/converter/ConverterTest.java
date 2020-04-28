@@ -163,5 +163,53 @@ public class ConverterTest {
         assertEquals(201, result, 0.001);
     }
 
+    @Test
+    public void honeyCupsToML(){
+        Converter converter = new Converter();
+        converter.convert("honey","cups", 1.0 ,"millilitres");
+        Double result = converter.conversion();
+        assertEquals(240, result, 0.001);
+    }
+    
+    @Test
+    public void honeyCupsToG(){
+        Converter converter = new Converter();
+        converter.convert("honey","cups", 1.0 ,"grams");
+        Double result = converter.conversion();
+        assertEquals(336, result, 0.001);
+    }
+
+    @Test
+    public void honeyMlToCups(){
+        Converter converter = new Converter();
+        converter.convert("honey","millilitres", 240.0 ,"cups");
+        Double result = converter.conversion();
+        assertEquals(1, result, 0.001);
+    }
+
+    @Test
+    public void honeyGramsToCups(){
+        Converter converter = new Converter();
+        converter.convert("honey","grams", 336.0 ,"cups");
+        Double result = converter.conversion();
+        assertEquals(1, result, 0.001);
+    }
+
+    @Test
+    public void honeyGramsToML(){
+        Converter converter = new Converter();
+        converter.convert("honey","grams", 336.0 ,"millilitres");
+        Double result = converter.conversion();
+        assertEquals(240, result, 0.001);
+    }
+
+    @Test
+    public void honeyMlToGrams(){
+        Converter converter = new Converter();
+        converter.convert("honey","millilitres", 240.0 ,"grams");
+        Double result = converter.conversion();
+        assertEquals(336, result, 0.001);
+    }
+
 
 }

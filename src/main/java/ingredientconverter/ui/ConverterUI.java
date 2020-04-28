@@ -18,9 +18,13 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.application.Application;
 import ingredientconverter.converter.Converter;
-
+/**
+ * A class that handles the graphical user interface.
+ */
 public class ConverterUI extends Application {
-
+    /**
+     * The graphical user interface is created here.
+     */
     @Override
     public void start(Stage window) {
         Converter converter = new Converter();
@@ -61,7 +65,10 @@ public class ConverterUI extends Application {
         window.setScene(show);
         window.show();
     }
-
+    /**
+     * The GUI is initialized here.
+     * @param args Standard main method for class.
+     */
     public static void main(String[] args) {
         launch(args);
     }

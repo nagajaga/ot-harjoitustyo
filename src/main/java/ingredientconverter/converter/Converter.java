@@ -12,12 +12,15 @@ public class Converter {
     private Double amount;
     private String toUnit;
     private ArrayList<Convertible> convertibles;
-
+    /**
+     * Constructor for Converter.
+     */
     public Converter() {
         this.convertibles = new ArrayList<Convertible>();
         this.convertibles.add(new Convertible("flour",126.8));
         this.convertibles.add(new Convertible("sugar",201.0));
         this.convertibles.add(new Convertible("butter",227.0));
+        this.convertibles.add(new Convertible("honey",336.0));
 
     }
     /**

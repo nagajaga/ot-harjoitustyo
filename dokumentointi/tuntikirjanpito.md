@@ -9,5 +9,7 @@ Käyttöliittymä, rakenne, toimiva sovellus, 100% rivikattavuus sovelluslogiika
 ## Viikko 5: 12h
 Graafinen käyttöliittymä, lisää testejä, javaFX ja muu maven konfigurointi, kaaviot.
 
+## Viikko 6: 9h
+Uusi luokka Convertible, koodin refaktorointi/copypasten vähennys, JavaDocs, arkkitehtuurikuvaus, käyttöohjeet
 
-Yhteensä: 21h
+## Yhteensä: 28h

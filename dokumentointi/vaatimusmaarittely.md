@@ -9,6 +9,7 @@ Sovelluksen avulla voidaan muuntaa aineita eri mittayksiköiksi. Esimerkiksi voi
 - Näkyvillä on eri aineita joita voidaan muntaa TEHTY
 - Voidaan valita haluttu mittayksikkö TEHTY
 - Saadaan näkyville aineen määrä valittuna mittayksikkönä TEHTY
+- Ainakin 4 eri ainetta TEHTY
 
 # Jatkokehitysideoita
 

@@ -2,7 +2,7 @@
 
 Ohjelman tämänhetkisessä tilassa on käytettävissä seuraavat arvot konversioita varten.
 
-Ingredient sarakkeeseen voi syöttää arvot: flour, butter, sugar
+Ingredient sarakkeeseen voi syöttää arvot: flour, butter, sugar, honey
 
 Convert from ja Convert to sarakkeisiin voi syöttää arvot: grams, millilitres, cups
 
