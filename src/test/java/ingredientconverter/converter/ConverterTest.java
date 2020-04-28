@@ -6,10 +6,7 @@
 package ingredientconverter.converter;
 
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -68,14 +65,6 @@ public class ConverterTest {
         converter.convert("flour","millilitres",240.0,"cups");
         Double result = converter.conversion();
         assertEquals(1.0,result,0.001);
-    }
-
-    @Test
-    public void invalidIngredient(){
-        Converter converter = new Converter();
-        converter.convert("potato","millilitres",240.0,"cups");
-        Double result = converter.conversion();
-        assertEquals(0.0,result,0.001);
     }
 
     @Test

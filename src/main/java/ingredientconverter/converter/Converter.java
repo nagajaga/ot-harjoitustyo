@@ -1,5 +1,9 @@
 package ingredientconverter.converter;
-
+import java.util.*;
+/**
+ * A class that takes the given inputs and performs conversions
+ * based on formulas in the Convertibles.java class.
+ */
 public class Converter {
 
     private Double newAmount;
@@ -7,94 +11,52 @@ public class Converter {
     private String fromUnit;
     private Double amount;
     private String toUnit;
+    private ArrayList<Convertible> convertibles;
 
     public Converter() {
-        newAmount = amount;
-    }
+        this.convertibles = new ArrayList<Convertible>();
+        this.convertibles.add(new Convertible("flour",126.8));
+        this.convertibles.add(new Convertible("sugar",201.0));
+        this.convertibles.add(new Convertible("butter",227.0));
 
+    }
+    /**
+     * The method takes given parameters and performs conversions
+     * based on the formulas in the Convertible.java class.
+     * @param ingredientName Ingredient name given by user.
+     * @param fromUnit Unit to convert from.
+     * @param amount Amount given by user.
+     * @param toUnit Unit to convert into.
+     */
     public void convert(String ingredientName, String fromUnit, Double amount, String toUnit) {
         this.ingredientName = ingredientName;
         this.fromUnit = fromUnit;
         this.amount = amount;
         this.toUnit = toUnit;
-        if (ingredientName.equals("flour")) {
-            convertFlour();
-        } else if (ingredientName.equals("butter")) {
-            convertButter();
-        } else if (ingredientName.equals("sugar")) {
-            convertSugar();
-        } else {
-            newAmount = 0.0;
-        }
-
-    }
-
-    public void convertFlour() {
-        if (fromUnit.equals("grams")) {
-            if (toUnit.equals("millilitres")) {
-                newAmount = amount * 1.8927;
-            } else if (toUnit.equals("cups")) {
-                newAmount = (amount * 1.8927) / 240;
-            }
-        } else if (fromUnit.equals("millilitres")) {
-            if (toUnit.equals("grams")) {
-                newAmount = amount / 1.8927;
-            } else if (toUnit.equals("cups")) {
-                newAmount = amount / 240;
-            }
-        } else if (fromUnit.equals("cups")) {
-            if (toUnit.equals("grams")) {
-                newAmount = (amount / 1.8927) * 240;
-            } else if (toUnit.equals("millilitres")) {
-                newAmount = amount * 240;
-            }
+        newAmount = this.amount;
+        for(int i = 0; i < this.convertibles.size(); i++) {
+            if(this.ingredientName.equals(this.convertibles.get(i).getName())) {
+                if(this.fromUnit.equals("cups") && this.toUnit.equals("grams")) {
+                    newAmount = this.amount * this.convertibles.get(i).cupsToGrams();
+                } else if (this.fromUnit.equals("cups") && this.toUnit.equals("millilitres")) {
+                    newAmount = this.amount * this.convertibles.get(i).cupsToMl();
+                } else if (this.fromUnit.equals("millilitres") && this.toUnit.equals("grams")) {
+                    newAmount = this.amount * this.convertibles.get(i).mlToGrams();
+                } else if (this.fromUnit.equals("millilitres") && this.toUnit.equals("cups")) {
+                    newAmount = this.amount * this.convertibles.get(i).mlToCups();
+                } else if (this.fromUnit.equals("grams") && this.toUnit.equals("millilitres")) {
+                    newAmount = this.amount * this.convertibles.get(i).gramsToMl();
+                } else if (this.fromUnit.equals("grams") && this.toUnit.equals("cups")) {
+                    newAmount = this.amount * this.convertibles.get(i).gramsToCups();
+                }
+            } 
         }
     }
 
-    public void convertButter() {
-        if (fromUnit.equals("grams")) {
-            if (toUnit.equals("millilitres")) {
-                newAmount = amount * 1.057268;
-            } else if (toUnit.equals("cups")) {
-                newAmount = amount / 227;
-            }
-        } else if (fromUnit.equals("millilitres")) {
-            if (toUnit.equals("grams")) {
-                newAmount = amount / 1.057268;
-            } else if (toUnit.equals("cups")) {
-                newAmount = amount / 240;
-            }
-        } else if (fromUnit.equals("cups")) {
-            if (toUnit.equals("grams")) {
-                newAmount = amount * 227;
-            } else if (toUnit.equals("millilitres")) {
-                newAmount = amount * 240;
-            }
-        }
-    }
-
-    public void convertSugar() {
-        if (fromUnit.equals("grams")) {
-            if (toUnit.equals("millilitres")) {
-                newAmount = amount * 1.194029;
-            } else if (toUnit.equals("cups")) {
-                newAmount = amount / 201;
-            }
-        } else if (fromUnit.equals("millilitres")) {
-            if (toUnit.equals("grams")) {
-                newAmount = amount / 1.194029;
-            } else if (toUnit.equals("cups")) {
-                newAmount = amount / 240;
-            }
-        } else if (fromUnit.equals("cups")) {
-            if (toUnit.equals("grams")) {
-                newAmount = amount * 201;
-            } else if (toUnit.equals("millilitres")) {
-                newAmount = amount * 240;
-            }
-        }
-    }
-
+    /**
+     * Rounds up the conversion to a 2 decimal point Double.
+     * @return Returns a 2 decimal point Double, with the amount after conversion.
+     */
     public Double conversion() {
         return Math.round(newAmount * 100.0) / 100.0;
 
