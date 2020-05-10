@@ -6,7 +6,7 @@ Mittayksiköiden muunnokseen tarkoitettu ohjelma.
 
 [Arkkitehtuuri](https://github.com/nagajaga/ot-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
 
-[Käyttöohjeet](https://github.com/nagajaga/ot-harjoitustyo/blob/master/dokumentointi/K%C3%A4ytt%C3%B6ohjeet.md)
+[Käyttöohjeet](https://github.com/nagajaga/ot-harjoitustyo/blob/master/dokumentointi/k%C3%A4ytt%C3%B6ohjeet.md)
 
 
 ## Releaset
