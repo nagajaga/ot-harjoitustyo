@@ -7,7 +7,7 @@ Lataa tiedosto converter.jar
 Ohjelma käynnistetään komentoriviltä komennolla
 
 ```
-java -jar todoapp.jar
+java -jar converter.jar
 ```
 
 ## Ohjelman toiminta ja syötteet
