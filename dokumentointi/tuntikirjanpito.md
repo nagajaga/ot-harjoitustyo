@@ -15,4 +15,4 @@ Uusi luokka Convertible, koodin refaktorointi/copypasten vähennys, JavaDocs, ar
 ## Viikko 7: 10h
 Dokumentaatio, error handling, lisää testausta, release, lisää dokumentaatiota.
 
-## Yhteensä: 38h
+## Yhteensä: 40h
