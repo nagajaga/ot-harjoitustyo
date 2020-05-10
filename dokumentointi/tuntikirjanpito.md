@@ -12,4 +12,7 @@ Graafinen käyttöliittymä, lisää testejä, javaFX ja muu maven konfigurointi
 ## Viikko 6: 9h
 Uusi luokka Convertible, koodin refaktorointi/copypasten vähennys, JavaDocs, arkkitehtuurikuvaus, käyttöohjeet
 
+## Viikko 7: 10h
+Dokumentaatio, error handling, lisää testausta, release, lisää dokumentaatiota.
+
 ## Yhteensä: 28h
