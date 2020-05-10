@@ -4,6 +4,11 @@
 
 Sovelluksen avulla voidaan muuntaa aineita eri mittayksiköiksi. Esimerkiksi voimme saada selville paljon yksi kuppi vehnäjauhoa on millilitroina tai grammoina.
 
+# Käyttöliittymä
+
+- Perus tekstikäyttöliittymä TEHTY
+- Graafinen käyttöliittymä korvaa tekstikäyttöliittymän TEHTY
+
 # Perusversion tarjoama toiminnallisuus
 
 - Näkyvillä on eri aineita joita voidaan muntaa TEHTY

@@ -18,6 +18,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 import javafx.application.Application;
 import ingredientconverter.converter.Converter;
+
 /**
  * A class that handles the graphical user interface.
  */
@@ -40,8 +41,13 @@ public class ConverterUI extends Application {
 
         Button convertButton = new Button("Convert!");
         convertButton.setOnAction((event) -> {
-            converter.convert(ingredient.getText(), fromUnit.getText(), Double.parseDouble(quantity.getText()), toUnit.getText());
-            newAmt.setText(String.valueOf(converter.conversion())+ " " + toUnit.getText());
+            converter.convert(ingredient.getText(), fromUnit.getText(), Double.parseDouble(quantity.getText()),
+                    toUnit.getText());
+            if (converter.conversion() == -1.0) {
+                newAmt.setText("Invalid input.");
+            } else {
+                newAmt.setText(String.valueOf(converter.conversion()) + " " + toUnit.getText());
+            }
         });
         GridPane components = new GridPane();
         components.add(ingredientLabel, 0, 0);
@@ -65,8 +71,10 @@ public class ConverterUI extends Application {
         window.setScene(show);
         window.show();
     }
+
     /**
      * The GUI is initialized here.
+     * 
      * @param args Standard main method for class.
      */
     public static void main(String[] args) {

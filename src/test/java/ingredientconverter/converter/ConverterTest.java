@@ -211,5 +211,13 @@ public class ConverterTest {
         assertEquals(336, result, 0.001);
     }
 
+    @Test
+    public void invalidInput(){
+        Converter converter = new Converter();
+        converter.convert("potato", "test", 0.0, "test");
+        Double result = converter.conversion();
+        assertEquals(-1.0, result, 0.001);
+    }
+
 
 }
