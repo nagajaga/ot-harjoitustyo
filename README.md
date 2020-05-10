@@ -13,6 +13,10 @@ Mittayksiköiden muunnokseen tarkoitettu ohjelma.
 
 [Viikko 5](https://github.com/nagajaga/ot-harjoitustyo/releases/tag/viikko5)
 
+[Viikko 6](https://github.com/nagajaga/ot-harjoitustyo/releases/tag/viikko6)
+
+[Loppupalautus]https://github.com/nagajaga/ot-harjoitustyo/releases/tag/loppupalautus
+
 ## Komentorivitoiminnot
 
 ### Testaus
